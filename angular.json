@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "db-catalog": {
+    "directorio-personajes": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "db-catalog:build:production"
+              "buildTarget": "directorio-personajes:build:production"
             },
             "development": {
-              "buildTarget": "db-catalog:build:development"
+              "buildTarget": "directorio-personajes:build:development"
             }
           },
           "defaultConfiguration": "development"

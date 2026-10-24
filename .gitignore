@@ -1,17 +1,16 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
 
-# Node
+# Node dependencies
 /node_modules
 npm-debug.log
 yarn-error.log
+pnpm-debug.log
 
-# IDEs and editors
+# IDEs and Editors
 .idea/
 .project
 .classpath
@@ -26,19 +25,19 @@ yarn-error.log
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-!.vscode/mcp.json
 .history/*
+
+# Testing & Coverage
+/coverage
+/.nyc_output
+karma.conf.js.map
 
 # Miscellaneous
 /.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-__screenshots__/
-
-# System files
 .DS_Store
 Thumbs.db
+
+# Environment files with sensitive credentials (opcional si usas variables privadas)
+# src/environments/environment.prod.ts
+# .env
+# .env.local
